@@ -61,7 +61,6 @@ const ProductsOne = () => {
                 </NewSectionImages>
             </NewSection>
             <NewButton>
-
             </NewButton>
         </NewItemsSection>
     )

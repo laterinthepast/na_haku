@@ -5,6 +5,7 @@ import About from './components/About'
 import SideBar from './components/SideBar';
 import ProductsOne from './components/ProductsOne';
 import Gallery from './components/Gallery';
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 
@@ -14,13 +15,14 @@ import Gallery from './components/Gallery';
 function App() {
   return (
     <div>
-      <SideBar />
-      <Navigation />
-      <Landing />
-      <About />
-      <ProductsOne />
-      <Gallery />
-
+      <SimpleReactLightbox>
+        <SideBar />
+        <Navigation />
+        <Landing />
+        <About />
+        <ProductsOne />
+        <Gallery />
+      </SimpleReactLightbox>
     </div>
 
   );
