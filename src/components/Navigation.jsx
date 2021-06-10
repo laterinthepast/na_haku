@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import '../styles/styles.css'
 
 
 const Wrapper = styled.div`
@@ -24,6 +24,10 @@ const Links = styled.div`
 const NavLink = styled.div`
     a {
         text-decoration: none;
+        &:hover {
+            color: #023047;
+            
+        }
     }
     padding: 1rem;
     

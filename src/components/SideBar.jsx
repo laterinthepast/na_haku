@@ -18,9 +18,11 @@ const SidebarLinks = styled.div`
     align-items: center;
     width: 100%;
     font-size: 2rem;
+    
     .side-link {
         padding: 1rem;
     }
+    
 `
 
 const SideBar = () => {

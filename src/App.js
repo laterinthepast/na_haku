@@ -6,6 +6,7 @@ import SideBar from './components/SideBar';
 import ProductsOne from './components/ProductsOne';
 import Gallery from './components/Gallery';
 import SimpleReactLightbox from 'simple-react-lightbox'
+import Footer from './components/Footer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <About />
         <ProductsOne />
         <Gallery />
+        <Footer />
       </SimpleReactLightbox>
     </div>
 

@@ -1,14 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Poiret+One&family=Rajdhani:wght@300;400;600;700&family=Sacramento&display=swap");
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  font-family: "Amatic SC", cursive;
+  /* font-family: "Amatic SC", cursive; */
   color: #000;
-  /* font-family: "Dancing Script", cursive;
+  /*font-family: "Dancing Script", cursive;
   font-family: "Poiret One", cursive;
-  font-family: "Rajdhani", sans-serif;
-  font-family: "Sacramento", cursive; */
+  font-family: "Rajdhani", sans-serif;*/
+  font-family: "Sacramento", cursive;
+}
+
+body {
+  width: 100%;
 }
