@@ -6,20 +6,17 @@ const AboutContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    
-    
+    text-align: left;  
 `
 
 const AboutSection = styled.div`
-    display: flex;
+    display:grid;
+    grid-template-columns: 30% 70%;
     width: 70%;
     height: 50%;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding: 2rem;
     border-radius: 50px;
-    
-
 `
 const AboutLogo = styled.div`
     display: flex;
@@ -31,10 +28,8 @@ const AboutLogo = styled.div`
 `
 
 const AboutText = styled.div`
-    font-size: 2rem;
-    
+    font-size: 2rem;   
 `
-
 
 const About = () => {
     return (

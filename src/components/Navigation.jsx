@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import '../styles/styles.css'
 
-
 const Wrapper = styled.div`
     font-size: 2rem;
     width: 100%;
     padding: 0 10rem;
+    @media screen and (max-width:1000px){
+        padding: 0;
+    }
+
 `
-
 const Navbar = styled.div`
-    
-
 `
 
 const Links = styled.div`
@@ -22,16 +22,26 @@ const Links = styled.div`
 `
 
 const NavLink = styled.div`
+    
     a {
+        font-weight: bold;
+        font-size: 2.2rem;
         text-decoration: none;
+        transition: all 0.25s ease-in;
         &:hover {
-            color: #023047;
-            
+            color: ;
+            text-shadow: 0.2px 0.2px #023047;
         }
     }
-    padding: 1rem;
-    
+    padding: 0.5rem;
 `
+
+const HamburgerMenu = styled.div`
+
+`
+
+
+
 
 const Navigation = () => {
 
@@ -40,9 +50,9 @@ const Navigation = () => {
         <Wrapper>
             <Navbar>
                 <Links>
-                    <NavLink > <a href="#about">o mnie</a></NavLink>
-                    <NavLink > <a href="#products">produkty</a></NavLink>
-                    <NavLink > <a href="#contact">kontakt</a></NavLink>
+                    <NavLink ><a href="#about">o mnie</a></NavLink>
+                    <NavLink ><a href="#products">produkty</a></NavLink>
+                    <NavLink ><a href="#contact">kontakt</a></NavLink>
                 </Links>
             </Navbar>
         </Wrapper>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import styled from 'styled-components'
-import { faEtsy, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'
 
+import { faEtsy, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'
+import styled from 'styled-components'
 
 
 const SidebarLeft = styled.div`

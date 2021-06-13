@@ -6,19 +6,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEtsy, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'
 
 const FooterWrapper = styled.div`
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
     align-items: center;
-    padding: 3rem 0 0;
+    padding: 3rem 0 ;
     img {
         width: 40%;
     }
     a {
-        font-size: 3rem;
-        padding: 0 2rem;
+        font-size: 2rem;
+        padding: 0 1rem;
     }
     h4 {
         font-size: 4rem;
+    }
+    @media screen and (max-width:1000px){
+
     }
 `
 
