@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
-import { Navbar } from 'react-bootstrap';
+import styled from 'styled-components';
 
+
+
+const MobileContainer = styled.div`
+        @media screen and (min-width: 990px) {
+        display: none;
+  }
+          
+    
+    
+`
 
 
 
@@ -12,25 +22,25 @@ export class MobileMenu extends Component {
 
     render() {
         return (
-            
-            <div className="item-container">
+
+            <MobileContainer>
                 <section className="name-container">
                     {this.props.name}
                 </section>
                 <section className="container">
-                    <div onClick={() => this.setState({show: !this.state.show})}
+                    <div onClick={() => this.setState({ show: !this.state.show })}
                         className={(this.state.show) ? "hamburger" : "hamburger active"}>
-                            <span className="line line-1"></span>
-                            <span className="line line-2"></span>
-                            <span className="line line-3"></span>
+                        <span className="line line-1"></span>
+                        <span className="line line-2"></span>
+                        <span className="line line-3"></span>
                     </div>
 
                 </section>
                 <div className="modal">
-                    
+
                 </div>
-            </div> 
-            
+            </MobileContainer>
+
         );
     }
 

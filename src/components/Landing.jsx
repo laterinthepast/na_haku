@@ -22,6 +22,21 @@ const Welcome = styled.div`
        box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px; 
         }
     }
+    @media screen and (max-width: 990px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    height: auto;
+    .logo-img, .welcome-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+        width: 70%;
+        }
+    }
+  }
 `
 
 

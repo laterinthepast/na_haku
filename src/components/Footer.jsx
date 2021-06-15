@@ -20,9 +20,20 @@ const FooterWrapper = styled.div`
     h4 {
         font-size: 4rem;
     }
-    @media screen and (max-width:1000px){
-
+    @media screen and (max-width: 990px) {
+    display: flex;
+    padding: 0 2rem 0 0;
+    h4 {
+        font-size: 1.3rem;
     }
+    img {
+        width: 80%;
+    }
+    a {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+  }
 `
 
 
@@ -32,8 +43,9 @@ const Footer = () => {
             <div>
                 <img src={logoF} alt="logo" />
             </div>
-            <h4>na_ha_ku@gmail.com</h4>
-            <div>
+            <div className="">
+                <h4>na_ha_ku@gmail.com</h4>
+
                 <a href="/"><FontAwesomeIcon icon={faEtsy} /></a>
                 <a href="/"><FontAwesomeIcon icon={faInstagram} /></a>
                 <a href="/"><FontAwesomeIcon icon={faPinterest} /></a>

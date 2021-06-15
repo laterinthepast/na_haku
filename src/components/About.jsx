@@ -7,6 +7,12 @@ const AboutContainer = styled.div`
     justify-content: center;
     align-items: center;
     text-align: left;  
+    @media screen and (max-width: 990px){
+        justify-content: flex-end;
+        padding: 5rem 3rem 5rem 3rem;
+
+    }
+   
 `
 
 const AboutSection = styled.div`
@@ -14,9 +20,20 @@ const AboutSection = styled.div`
     grid-template-columns: 30% 70%;
     width: 70%;
     height: 50%;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 2rem;
     border-radius: 50px;
+    @media screen and (max-width: 990px){
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        img {
+            display: none;
+        }
+        padding: 1rem;
+        
+    }
+
 `
 const AboutLogo = styled.div`
     display: flex;
@@ -29,6 +46,10 @@ const AboutLogo = styled.div`
 
 const AboutText = styled.div`
     font-size: 2rem;   
+    @media screen and (max-width: 990px){
+        font-size: 1rem;
+        
+    }
 `
 
 const About = () => {

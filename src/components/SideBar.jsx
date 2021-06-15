@@ -11,6 +11,10 @@ const SidebarLeft = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 990px){
+        width: 3rem;
+
+    }
 `
 const SidebarLinks = styled.div`
     display: flex;
@@ -21,6 +25,12 @@ const SidebarLinks = styled.div`
     
     .side-link {
         padding: 1rem;
+    }
+    @media screen and (max-width: 990px){
+        font-size: 1.5rem;
+    }
+    .side-link {
+        padding: 0.9rem;
     }
     
 `

@@ -7,9 +7,16 @@ import { SRLWrapper } from 'simple-react-lightbox';
 
 const NewItemsSection = styled.div`
     padding: 4rem;
+    @media screen and (max-width: 990px) {
+    padding: 1rem;
+  }
 `
 const NewHeader = styled.div`
     font-size: 4rem;
+    @media screen and (max-width: 990px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 `
 
 const NewSection = styled.div`
@@ -21,7 +28,7 @@ const NewSection = styled.div`
 const NewSectionText = styled.div`
     display: flex;
     h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         transform: rotate(-90deg);
     }
 `
@@ -32,7 +39,7 @@ const NewSectionImages = styled.div`
     width: 70%;
     
     img {
-        width: 100%;
+        width: 80%;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius:40px;
         transition: all 0.2s ease-in-out;

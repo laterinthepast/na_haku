@@ -12,7 +12,11 @@ const Wrapper = styled.div`
 
 `
 const Navbar = styled.div`
-    
+    position: absolute;
+    right: 20px;
+    @media screen and (max-width: 990px) {
+    display: none;
+  }
 `
 
 const Links = styled.div`
@@ -45,23 +49,6 @@ const NavLink = styled.div`
     
 `
 
-
-const HamburgerMenu = styled.div`
-    .hamburger-react {
-      @media screen and (min-width:990px){
-        display: none;
-      }
-      
-    }
-      position:absolute;
-      right: 20px;
-      top: 20px;
-`
-
-
-
-
-
 const Navigation = () => {
 
 
@@ -74,11 +61,6 @@ const Navigation = () => {
           <NavLink ><a href="#products" >produkty</a></NavLink>
           <NavLink ><a href="#contact" >kontakt</a></NavLink>
         </Links>
-        <HamburgerMenu className="">
-
-        </HamburgerMenu>
-
-
       </Navbar>
     </Wrapper>
   )
