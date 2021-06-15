@@ -68,3 +68,57 @@
 body {
   width: 100%;
 }
+
+.hamburger {
+  width: 75px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.hamburger:hover .line-1, .hamburger:focus .line-1 {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.hamburger:hover .line-3, .hamburger:focus .line-3 {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.hamburger.active .line-1 {
+  -webkit-transform: translateY(17.5px) rotate(45deg);
+          transform: translateY(17.5px) rotate(45deg);
+}
+
+.hamburger.active .line-2 {
+  opacity: 0;
+}
+
+.hamburger.active .line-3 {
+  -webkit-transform: translateY(-17.5px) rotate(-45deg);
+          transform: translateY(-17.5px) rotate(-45deg);
+}
+
+.line {
+  background: #000;
+  width: 50px;
+  height: 7px;
+  position: absolute;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.line.line-1 {
+  top: 0%;
+}
+
+.line.line-2 {
+  top: 50%;
+}
+
+.line.line-3 {
+  top: 100%;
+}
