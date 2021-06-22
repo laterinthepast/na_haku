@@ -15,13 +15,35 @@ import im11 from '../images/download/1 (11).jpg'
 
 
 const ImageWrapper = styled.div`
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 3rem;
+    gap: 5rem;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    max-width: 100%;
 `
 const ImageContainer = styled.div`
-
+    max-width: 300px;
+    max-height: 300px;
+    display:flex;
+    justify-content: center;
+    
 `
 const Image = styled.img`
-    width: 20%;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &:hover {
+        transform: scale(1.04);
+        box-shadow: rgba(100, 100, 111, 0.2) 10px 10px 29px 10px;
+    }
+
 `
 
 

@@ -3,11 +3,60 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  font-family: "Amatic SC", cursive;
+
+  /* font-family: "Amatic SC", cursive; */
   color: #000;
-  /* font-family: "Dancing Script", cursive;
+  /*font-family: "Dancing Script", cursive;
   font-family: "Poiret One", cursive;
-  font-family: "Rajdhani", sans-serif;
-  font-family: "Sacramento", cursive; */
+  font-family: "Rajdhani", sans-serif;*/
+  font-family: "Sacramento", cursive;
+}
+body {
+  width: 100%;
+}
+
+.hamburger {
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  &:hover,
+  &:focus {
+    .line-1 {
+      transform: translateY(-4px);
+    }
+    .line-3 {
+      transform: translateY(4px);
+    }
+  }
+  &.active {
+    .line-1 {
+      transform: translateY(17.5px) rotate(45deg);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: translateY(-17.5px) rotate(-45deg);
+    }
+  }
+}
+
+.line {
+  background: #000;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50px;
+  transition: all 0.3s;
+  &.line-1 {
+    top: 0%;
+  }
+  &.line-2 {
+    top: 50%;
+  }
+  &.line-3 {
+    top: 100%;
+  }
 }

@@ -1,14 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Poiret+One&family=Rajdhani:wght@300;400;600;700&family=Sacramento&display=swap");
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  5% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  10% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  15% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  20% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  font-family: "Amatic SC", cursive;
+  /* font-family: "Amatic SC", cursive; */
   color: #000;
-  /* font-family: "Dancing Script", cursive;
+  /*font-family: "Dancing Script", cursive;
   font-family: "Poiret One", cursive;
-  font-family: "Rajdhani", sans-serif;
-  font-family: "Sacramento", cursive; */
+  font-family: "Rajdhani", sans-serif;*/
+  font-family: "Sacramento", cursive;
+}
+
+body {
+  width: 100%;
+}
+
+.hamburger {
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.hamburger:hover .line-1, .hamburger:focus .line-1 {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.hamburger:hover .line-3, .hamburger:focus .line-3 {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.hamburger.active .line-1 {
+  -webkit-transform: translateY(17.5px) rotate(45deg);
+          transform: translateY(17.5px) rotate(45deg);
+}
+
+.hamburger.active .line-2 {
+  opacity: 0;
+}
+
+.hamburger.active .line-3 {
+  -webkit-transform: translateY(-17.5px) rotate(-45deg);
+          transform: translateY(-17.5px) rotate(-45deg);
+}
+
+.line {
+  background: #000;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.line.line-1 {
+  top: 0%;
+}
+
+.line.line-2 {
+  top: 50%;
+}
+
+.line.line-3 {
+  top: 100%;
 }

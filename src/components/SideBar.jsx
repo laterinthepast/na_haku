@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import styled from 'styled-components'
-import { faEtsy, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'
 
+import { faEtsy, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'
+import styled from 'styled-components'
 
 
 const SidebarLeft = styled.div`
@@ -11,6 +11,10 @@ const SidebarLeft = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 990px){
+        width: 3rem;
+
+    }
 `
 const SidebarLinks = styled.div`
     display: flex;
@@ -18,9 +22,17 @@ const SidebarLinks = styled.div`
     align-items: center;
     width: 100%;
     font-size: 2rem;
+    
     .side-link {
         padding: 1rem;
     }
+    @media screen and (max-width: 990px){
+        font-size: 1.5rem;
+    }
+    .side-link {
+        padding: 0.9rem;
+    }
+    
 `
 
 const SideBar = () => {
