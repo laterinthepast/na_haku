@@ -9,3 +9,9 @@ Website built with React and Sass using styled components. Work in progress
 
 
 Awaiting client decision about the layout
+
+
+# new design
+
+[nahaku.pdf](https://github.com/laterinthepast/na_haku/files/6908885/nahaku.pdf)
+-> needs a client confirmation
