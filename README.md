@@ -15,3 +15,5 @@ Awaiting client decision about the layout
 
 [nahaku.pdf](https://github.com/laterinthepast/na_haku/files/6908885/nahaku.pdf)
 -> needs a client confirmation
+
+- approved, rebuilding site in next two weeks 
