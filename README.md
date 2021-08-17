@@ -17,3 +17,4 @@ Awaiting client decision about the layout
 -> needs a client confirmation
 
 - approved, rebuilding site in next two weeks 
+- start 18th August 
