@@ -8,8 +8,6 @@ const Wrapper = styled.div`
     font-size: 2rem;
     width: 100%;
     padding: 0 10rem;
-    
-
 `
 const Navbar = styled.div`
     position: absolute;
@@ -18,41 +16,42 @@ const Navbar = styled.div`
     display: none;
   }
 `
-
 const Links = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
     @media screen and (max-width: 990px) {
     display: none;
-  }
-
-    
+  } 
 `
-
 const NavLink = styled.div`
+    border: 1px solid #000;
+    margin-right: 1rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
     a {
+        
         font-weight: bold;
-        font-size: 2.2rem;
+        font-size: 2rem;
         text-decoration: none;
-        transition: all 0.25s ease-in;
-        &:hover {
-            color: ;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        &:hover {    
+
             text-shadow: 0.2px 0.2px #023047;
+            position:initial;
         }
+        
     }
     padding: 0.5rem;
     @media screen and (min-width: 990px) {
-    
   }
-    
 `
-
 const Navigation = () => {
-
-
-
   return (
     <Wrapper>
       <Navbar>

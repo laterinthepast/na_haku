@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import logoF from '../images/download/icons/NA_HA_KU.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { faEtsy, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons'
 
 const FooterWrapper = styled.div`
@@ -45,7 +44,6 @@ const Footer = () => {
             </div>
             <div className="">
                 <h4>na_ha_ku@gmail.com</h4>
-
                 <a href="/"><FontAwesomeIcon icon={faEtsy} /></a>
                 <a href="/"><FontAwesomeIcon icon={faInstagram} /></a>
                 <a href="/"><FontAwesomeIcon icon={faPinterest} /></a>
